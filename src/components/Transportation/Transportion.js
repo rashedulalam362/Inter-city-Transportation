@@ -13,7 +13,7 @@ const Transportion = (props) => {
     return (
        <div className="col-md-3 my-3">
 
-      <Card   style={{ width: '18rem' }}>
+      <Card   style={{ width: '17rem' }}>
            
            <Card.Img variant="top" src={imgUrl} />
    
