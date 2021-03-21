@@ -1,13 +1,9 @@
 import React from 'react';
 import Transportion from '../Transportation/Transportion';
-
+import './Home.css'
 
 const Home = () => {
-    const style = {
-        display: 'flex',
-        margin: '40px',
-        justifyContent: 'space-between'
-    }
+   
     const vehicles = [
         {
             id:1,
@@ -38,11 +34,16 @@ const Home = () => {
         }
     ]
     return (
-        <div style={style}>
-            
-               {vehicles.map(vehicle=><Transportion vehicle={vehicle}></Transportion>)} 
+        
+            <div className="home">
+            {vehicles.map(vehicle=><Transportion  vehicle={vehicle}></Transportion>)} 
+           
+        
+           
+              
                
         </div>
+        
     );
 };
 

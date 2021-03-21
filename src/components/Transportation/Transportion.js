@@ -11,20 +11,20 @@ const Transportion = (props) => {
         history.push(`/vehicle/${id}`);
     }
     return (
-        // <div>
-        //     {/* <h1>this is transportion {vehicle.imgUrl}</h1> */}
-        //     <img src={imgUrl} alt=""/>
-        //     {props.title}
-        // </div>
-        <Card   style={{ width: '18rem' }}>
+       <div className="container">
+
+<Card   style={{ width: '18rem' }}>
            
-        <Card.Img variant="top" src={imgUrl} />
+           <Card.Img variant="top" src={imgUrl} />
+   
+           <Card.Body>
+           <Button onClick={() => handleBook(id)} variant="contained" color="primary">click</Button>
+           </Card.Body>
+         </Card>
+   
 
-        <Card.Body>
-        <Button onClick={() => handleBook(id)} variant="contained" color="primary">click</Button>
-        </Card.Body>
-      </Card>
-
+       </div>
+       
     );
 };
 

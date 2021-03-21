@@ -19,15 +19,16 @@ function App() {
     <userContext.Provider value={[loggedInUser,setLoggedInUser]}>
     <Router>
     name:{loggedInUser.name}
-          <Header/>
+    <Header/>
           <Switch>
+         
             <Route path="/home">
               <Home />
             </Route>
             <Route path="/login">
               <Login />
             </Route>
-            <PrivateRoute path="/vehicle/:id">
+            <PrivateRoute path="/vehicle/:id/">
               <Destination />
             </PrivateRoute>
             <Route exact path="/">
