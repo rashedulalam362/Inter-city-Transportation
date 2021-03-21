@@ -35,8 +35,15 @@ const Home = () => {
     ]
     return (
         
-            <div className="home">
-            {vehicles.map(vehicle=><Transportion  vehicle={vehicle}></Transportion>)} 
+            <div className="container" >
+                <div className="container mt-5">
+
+         
+             <div className="row">
+             {vehicles.map(vehicle=><Transportion  vehicle={vehicle}></Transportion>)}  
+                 </div>   
+                 </div>
+           
            
         
            

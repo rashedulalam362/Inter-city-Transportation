@@ -11,9 +11,9 @@ const Transportion = (props) => {
         history.push(`/vehicle/${id}`);
     }
     return (
-       <div className="container">
+       <div className="col-md-3 my-3">
 
-<Card   style={{ width: '18rem' }}>
+      <Card   style={{ width: '18rem' }}>
            
            <Card.Img variant="top" src={imgUrl} />
    
